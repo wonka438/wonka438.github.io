@@ -13,15 +13,25 @@
 <link rel="canonical" href="http://mail.qiye.163.com/" />
 
 <title>网易企业邮箱集成接口</title>
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script
+	src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="http://cdn.bootcss.com/holder/2.0/holder.min.js"></script>
+<script src="http://cdn.bootcss.com/highlight.js/7.3/highlight.min.js"></script>
 <link
 	href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"
-	rel="stylesheet">
-<link href="http://v3.bootcss.com/docs-assets/css/docs.css"
 	rel="stylesheet">
 <link
 	href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css"
 	rel="stylesheet">
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
 
+<script src="http://v3.bootcss.com/docs-assets/js/application.js"></script>
+
+<link href="docs.css"
+	rel="stylesheet">
 <style>
 body {
 	font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande",
@@ -915,15 +925,17 @@ http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
 						<code>{status:1,msg:success,count:3}</code>
 					</p>
 				</div>
-				
+
 				<div class="bs-docs-section">
 					<!-- 关于文档 -->
 					<div class="page-header">
 						<h1 id="custom">自定义登录框接口</h1>
 					</div>
 					<h3 id="custom_description">接口说明</h3>
-					<p>提供代码模版，可在客户的网站页面中嵌入网易企业邮箱的登录框，用户从自己的网站或系统上直接输入用户名和密码登录网易企业邮箱, 支持用户自行设置个性化登录框。</p>
-					<img src="自定义登陆框.png" class="img-responsive img-rounded" alt="自定义登陆框">
+					<p>提供代码模版，可在客户的网站页面中嵌入网易企业邮箱的登录框，用户从自己的网站或系统上直接输入用户名和密码登录网易企业邮箱,
+						支持用户自行设置个性化登录框。</p>
+					<img src="自定义登陆框.png" class="img-responsive img-rounded"
+						alt="自定义登陆框">
 
 					<h3 id="custom_specification">接口规范</h3>
 					<div class="bs-callout bs-callout-info">
@@ -942,65 +954,65 @@ http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
 							<li>提交方法：post</li>
 						</ul>
 						<table class="table table-hover">
-						<tr>
-							<th>数据项目</th>
-							<th>字段名称(name/id)</th>
-							<th>类型(type)</th>
-							<th>数据值(value)</th>
-							<th>是否必须</th>
-						</tr>
-						<tr>
-							<td>域名值</td>
-							<td>domain</td>
-							<td>hidden</td>
-							<td>根据客户域名生成特定值，客服提供，不需要修改</td>
-							<td>是</td>
-						</tr>
-						<tr>
-							<td>帐号</td>
-							<td>account_name</td>
-							<td>text</td>
-							<td>由用户填写</td>
-							<td>是</td>
-						</tr>
-						<tr>
-							<td>密码</td>
-							<td>password</td>
-							<td>password</td>
-							<td>由用户填写</td>
-							<td>是</td>
-						</tr>
-						<tr>
-							<td>是否记住用户名</td>
-							<td>remUsername</td>
-							<td>checkbox</td>
-							<td>需要客户页面自行实现</td>
-							<td>否</td>
-						</tr>
-						<tr>
-							<td>是否SSL安全登录</td>
-							<td>secure</td>
-							<td>checkbox</td>
-							<td>checked：默认选择，建议不要修改</td>
-							<td>是</td>
-						</tr>
-						<tr>
-							<td>是否全程SSL</td>
-							<td>all_secure</td>
-							<td>checkbox</td>
-							<td>checked：默认不选择</td>
-							<td>是</td>
-						</tr>
-						<tr>
-							<td>登录邮箱版本</td>
-							<td>language</td>
-							<td>hidden</td>
-							<td>0：简体中文（默认）；1：英文；2：繁体中文</td>
-							<td>否</td>
-						</tr>
+							<tr>
+								<th>数据项目</th>
+								<th>字段名称(name/id)</th>
+								<th>类型(type)</th>
+								<th>数据值(value)</th>
+								<th>是否必须</th>
+							</tr>
+							<tr>
+								<td>域名值</td>
+								<td>domain</td>
+								<td>hidden</td>
+								<td>根据客户域名生成特定值，客服提供，不需要修改</td>
+								<td>是</td>
+							</tr>
+							<tr>
+								<td>帐号</td>
+								<td>account_name</td>
+								<td>text</td>
+								<td>由用户填写</td>
+								<td>是</td>
+							</tr>
+							<tr>
+								<td>密码</td>
+								<td>password</td>
+								<td>password</td>
+								<td>由用户填写</td>
+								<td>是</td>
+							</tr>
+							<tr>
+								<td>是否记住用户名</td>
+								<td>remUsername</td>
+								<td>checkbox</td>
+								<td>需要客户页面自行实现</td>
+								<td>否</td>
+							</tr>
+							<tr>
+								<td>是否SSL安全登录</td>
+								<td>secure</td>
+								<td>checkbox</td>
+								<td>checked：默认选择，建议不要修改</td>
+								<td>是</td>
+							</tr>
+							<tr>
+								<td>是否全程SSL</td>
+								<td>all_secure</td>
+								<td>checkbox</td>
+								<td>checked：默认不选择</td>
+								<td>是</td>
+							</tr>
+							<tr>
+								<td>登录邮箱版本</td>
+								<td>language</td>
+								<td>hidden</td>
+								<td>0：简体中文（默认）；1：英文；2：繁体中文</td>
+								<td>否</td>
+							</tr>
 						</table>
 					</div>
-					
+
 					<div class="alert alert-warning">
 						<p>
 							<strong>注意事项:</strong>
@@ -1009,7 +1021,8 @@ http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
 					</div>
 
 					<h3 id="custom_examples">应用示例</h3>
-					<pre><code>&lt;form action="https://entryhz.qiye.163.com/domain/domainEntLogin" class="loginForm" method="post"&gt;
+					<pre>
+						<code>&lt;form action="https://entryhz.qiye.163.com/domain/domainEntLogin" class="loginForm" method="post"&gt;
     &lt;input type="hidden" name="domain" value="abc.com"/&gt;
     &lt;table&gt;
         &lt;caption&gt;企业用户登录&lt;/caption&gt;
@@ -1044,8 +1057,9 @@ http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
         &lt;/tr&gt;
     &lt;/table&gt;
 &lt;/form&gt;
-&lt;script type="text/javascript" src="//mail.qiye.163.com/js/loginjs.jsp"&gt;&lt;/script&gt;</code></pre>
-	
+&lt;script type="text/javascript" src="//mail.qiye.163.com/js/loginjs.jsp"&gt;&lt;/script&gt;</code>
+					</pre>
+
 					<h3 id="custom_check">错误信息</h3>
 					<p>测试从企业所在域登录，输入帐号密码后，如果登录失败，可以从登录页面的URL（即浏览器地址栏网址）中参数判断失败的具体原因，如下是常见的几种失败原因：</p>
 					<table class="table table-bordered table-striped">
@@ -1136,38 +1150,15 @@ http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
 						<tr>
 							<td>ERR.ILLEGAL</td>
 							<td>系统非法操作</td>
-						</tr>			
+						</tr>
 					</table>
-					
+
 				</div>
 			</div>
 		</div>
 	</div>
-
-
 	<footer class="bs-footer" role="contentinfo">
 		<div class="container">网易公司版权所有 © 1997--2014</div>
 	</footer>
-
-	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-	<script
-		src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-	<script src="http://cdn.bootcss.com/holder/2.0/holder.min.js"></script>
-	<script src="http://cdn.bootcss.com/highlight.js/7.3/highlight.min.js"></script>
-	<script>
-		hljs.initHighlightingOnLoad();
-	</script>
-
-	<script src="http://v3.bootcss.com/docs-assets/js/application.js"></script>
-
-	<script type="text/javascript">
-		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://"
-				: " http://");
-		document
-				.write(unescape("%3Cscript src='"
-						+ _bdhmProtocol
-						+ "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-
 </body>
 </html>
