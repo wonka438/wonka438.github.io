@@ -1,54 +1,1173 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="http://wonka438.github.io/doc/favicon_0.ico">
-    <title>网易企业邮箱集成接口</title>
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
-  </head>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="企业邮箱,企业邮箱登录,登录企业邮箱,163企业邮箱,企业信箱,网易企业邮箱,企业邮局,企业电子邮箱,企业邮件,企业内部邮箱,中国企业邮箱,企业邮箱网站,购买企业邮箱,反垃圾邮件,电子邮件,Email,邮箱,传真邮件,电子商务,集团邮箱,集团邮局, 集团邮件" />
+<meta name="description"
+	content="网易企业邮箱，最专业最稳定，反垃圾技术最优秀，收发速度最快，界面操作最简洁的企业邮箱，由自主研发国内首个全中文电子邮件系统以及具有十年邮箱运营经验的网易倾力打造。" />
+<meta name="title" content="网易企业邮箱 - 企业信息化专业解决方案" />
+<link rel="canonical" href="http://mail.qiye.163.com/" />
 
-  <body>
-   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <span class="navbar-brand" href="index.html">网易企业邮箱集成接口</span>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">接口介绍</a></li>
-			<li><a href="java.html">java版本</a></li>
-			<li><a href="net.html">.net版本</a></li>
-            <li><a href="php.html">php版本</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+<title>网易企业邮箱集成接口</title>
+<link
+	href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="http://v3.bootcss.com/docs-assets/css/docs.css"
+	rel="stylesheet">
+<link
+	href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css"
+	rel="stylesheet">
 
-    <div class="container">
+<style>
+body {
+	font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande",
+		"Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB",
+		"Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+}
 
-      <div class="starter-template">
-        JAVA
-      </div>
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,.lead {
+	font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande",
+		"Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB",
+		"Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei",
+		"WenQuanYi Micro Hei", sans-serif;
+}
 
-    </div><!-- /.container -->
+pre code {
+	background: transparent;
+}
+
+@media ( min-width : 768px) {
+	.bs-docs-home .bs-social,.bs-docs-home .bs-masthead-links {
+		margin-left: 0;
+	}
+}
+
+.bs-docs-section p {
+	line-height: 2;
+}
+
+.bs-docs-section p.lead {
+	line-height: 1.4;
+}
+
+/* .tr-sty {
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}  */
+</style>
+
+<link rel="shortcut icon" href="favicon_0.ico">
+
+</head>
+<body>
+	<a class="sr-only" href="#content">Skip to main content</a>
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
+		role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse"
+					data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a href="../" class="navbar-brand">网易企业邮箱集成接口</a>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse"
+				role="navigation">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="../getting-started">接口综述</a></li>
+					<li><a href="../css">JAVA</a></li>
+					<li><a href="../components">.Net</a></li>
+					<li><a href="../javascript">PHP</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../about">联系我们</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-  </body>
+	<div class="bs-header" id="content">
+		<div class="container">
+			<h1>集成接口</h1>
+			<p>网易企业邮箱提供多种集成接口与客户应用系统进行无缝集成，可实现组织架构和未读邮件数同步，支持用户网站登录首页实现单点登录和自定义登录界面，解决了网易企业邮箱系统与客户应用系统的集成问题。</p>
+		</div>
+	</div>
+
+	<div class="container bs-docs-container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="bs-sidebar hidden-print" role="complementary">
+					<ul class="nav bs-sidenav">
+						<li><a href="#about">关于文档</a>
+							<ul class="nav">
+								<li><a href="#about_target">目标</a></li>
+								<li><a href="#about_reader">读者</a></li>
+								<li><a href="#about_term">术语解析</a></li>
+							</ul></li>
+						<li><a href="#summary">概览</a>
+							<ul class="nav">
+								<li><a href="#summary_target">目标</a></li>
+								<li><a href="#summary_overview">功能概述</a></li>
+								<li><a href="#summary_framework">总体架构</a></li>
+								<li><a href="#summary_conditions">接口对接条件</a></li>
+								<li><a href="#summary_steps">应用步骤</a></li>
+								<li><a href="#summary_process">申请流程</a></li>
+							</ul></li>
+						<li><a href="#sync">部门帐号同步接口</a>
+							<ul class="nav">
+								<li><a href="#sync_description">接口说明</a></li>
+								<li><a href="#sync_specification">接口规范</a></li>
+								<li><a href="#sync_instructions">指令说明</a></li>
+								<li><a href="#sync_explanation">参数说明</a></li>
+								<li><a href="#sync_url">URL示例</a></li>
+								<li><a href="#sync_result">返回结果示例</a></li>
+								<li><a href="#sync_examples">应用示例</a></li>
+							</ul></li>
+						<li><a href="#login">单点登录接口</a>
+							<ul class="nav">
+								<li><a href="#login_description">接口说明</a></li>
+								<li><a href="#login_specification">接口规范</a></li>
+								<li><a href="#login_examples">应用示例</a></li>
+							</ul></li>
+						<li><a href="#unread">未读邮件数量接口</a>
+							<ul class="nav">
+								<li><a href="#unread_description">接口说明</a></li>
+								<li><a href="#unread_specification">接口规范</a></li>
+								<li><a href="#unread_examples">应用示例</a></li>
+							</ul></li>
+						<li><a href="#custom">自定义登录框接口</a>
+							<ul class="nav">
+								<li><a href="#custom_description">接口说明</a></li>
+								<li><a href="#custom_specification">接口规范</a></li>
+								<li><a href="#custom_examples">应用示例</a></li>
+								<li><a href="#custom_check">错误信息</a></li>
+							</ul></li>
+						<!-- <li><a href="#transitions">过渡效果</a></li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9" role="main">
+
+				<div class="bs-docs-section">
+					<!-- 关于文档 -->
+					<div class="page-header">
+						<h1 id="about">关于文档</h1>
+					</div>
+					<h3 id="about_target">目标</h3>
+					<p>这份文档帮助客户或经销商详细了解网易企业邮箱接口集成的具体功能和操作方法。</p>
+
+					<h3 id="about_reader">读者</h3>
+					<p>这份文档的预期读者为客户IT相关负责人、经销商客服和技术支持人员。</p>
+
+					<h3 id="about_term">术语解析</h3>
+					<div class="bs-callout bs-callout-info">
+						<h4>HTTP协议</h4>
+						<p>超文本传输协议(HTTP)是一种通信协议，它允许将超文本标记语言(HTML)文档从web服务器传送到Web浏览器。</p>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h4>URL</h4>
+						<p>统一资源定位符（URL，英语UniformResourceLocator的缩写）也被称为网页地址，是因特网上标准的资源的地址。统一资源定位符
+							URL 是对可以从因特网上得到的资源的位置和访问方法的一种简洁的表示。</p>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h4>RSA加密算法</h4>
+						<p>RSA加密算法是是目前最有影响力的公开密钥密码体制加密算法，它能够抵抗到目前为止已知的所有密码攻击，已被ISO推荐为公钥数据加密标准，从提出到现在的三十多年里，经历了各种攻击的考验，逐渐为人们接受，普遍认为是目前最优秀的公钥方案之一。国内银行的网银通讯也是采用此类加密传输方式，可以有效防止数据被盗用或篡改，给予用户数据安全保护的最高级别。</p>
+					</div>
+				</div>
+
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="summary">概览</h1>
+					</div>
+
+					<h3 id="summary_target">目标</h3>
+					<p>网易企业邮箱拥有多个集成接口供客户使用，并能与其他业务系统进行集成。</p>
+
+					<h3 id="summary_overview">功能概述</h3>
+					<p>
+						网易企业邮箱提供多种集成接口与客户应用系统进行无缝集成，可实现与用户应用系统中组织架构同步和未读邮件数同步，并且可以在用户应用系统或者用户网站登录首页实现单点登录或者嵌入自定义登录的入口，解决了网易企业邮箱系统与客户应用系统的集成问题。<strong
+							class="text-danger">集成接口采用了RSA加密算法和服务请求IP地址过滤等技术保障数据交互接口的安全</strong>。
+					</p>
+
+
+					<h3 id="summary_framework">总体架构</h3>
+					<img src="总体架构.png" class="img-responsive img-rounded" alt="总体架构">
+
+					<h3 id="summary_conditions">接口对接条件</h3>
+					<table class="table table-bordered table-striped">
+						<tr>
+							<th>对接条件</th>
+							<th>组织结构同步</th>
+							<th>单点登录</th>
+							<th>未读邮件数</th>
+							<th>自定义登录</th>
+						</tr>
+						<tr>
+							<td>RSA公钥登记</td>
+							<td>√</td>
+							<td>√</td>
+							<td>√</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>服务器时间一致</td>
+							<td></td>
+							<td>√</td>
+							<td>√</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>服务器出口IP登记</td>
+							<td>√</td>
+							<td></td>
+							<td>√</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>开通接口权限</td>
+							<td>√</td>
+							<td>√</td>
+							<td>√</td>
+							<td>√</td>
+						</tr>
+						<tr>
+							<td>系统部门数据结构一致</td>
+							<td>√</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<h3 id="summary_steps">应用步骤</h3>
+					<p>
+						1. 生成公私钥
+						<code>Utils.createKeyPair();</code>
+					</p>
+					<pre>
+						<code>Generating a pair of RSA key ... 
+pubKey:30819f300d06092a864886f70d010101050003818d003081890281810085802e30d10d33197354c6c2d0785526ff17b4741048745f17e8e91cb38c70dd60e9bce1bf9b73d9215ccb56ad68c5efcf3d7f62677cd685cb1664601b57f1535138ea1e60a...
+priKey:30820276020100300d06092a864886f70d0101010500048202603082025c0201000281810085802e30d10d33197354c6c2d0785526ff17b4741048745f17e8e91cb38c70dd60e9bce1bf9b73d9215ccb56ad68c5efcf3d7f62677cd685cb1664601b57f1535138ea1e60a42e8ccbb813ba8f7c91d27fcfde305cd1edc04a5aa26afba8e04c87c786113c2616f2fb8b6f5b9e0c55fb141eb96ae7426d35fbe9de581fccb621020...
+1024-bit RSA key GENERATED.</code>
+					</pre>
+					<p>
+						2. 把公钥和IP地址告诉接口提供方进行授权。<small>(注：单点登录接口不需要限定IP，可以不提供)</small>
+					</p>
+					<p>3. 生成操作参数（原始字符串）。</p>
+					<p>
+						4. 参数加密：
+						<code>Utils.encrypt(String priKey, String source);</code>
+						其中，priKey是私钥，source是原始字符串，返回加密后的字符串。
+					</p>
+					<p>5. 组装完整URL请求地址。</p>
+					<p>6. 发送POST请求。</p>
+					<p>7. 返回操作结果。整个接口应用过程中， 接口调用流程如下：</p>
+					<img src="调用接口流程.png" class="img-responsive img-rounded"
+						alt="调用接口流程"></img>
+
+					<h3 id="summary_process">申请流程</h3>
+					<p>
+						<small>注：以下流程图中<strong class="text-danger">红色</strong>字体部分的是客户申请需提供的资料
+						</small>
+					</p>
+					<img src="申请流程.png" class="img-responsive img-rounded" alt="申请流程">
+
+				</div>
+
+				<div class="bs-docs-section">
+					<!-- 关于文档 -->
+					<div class="page-header">
+						<h1 id="sync">部门帐号同步接口</h1>
+					</div>
+					<h3 id="sync_description">接口说明</h3>
+					<p>部门帐号同步接口通过HTTP协议提交同步指令或查询指令。同步指令支持创建、更新和删除部门，创建、禁用、删除和恢复帐号，修改帐号密码和属性，创建和删除帐号别名。查询指令支持查询部门列表、帐号列表和帐号别名列表。</p>
+
+					<h3 id="sync_specification">接口规范</h3>
+					<div class="bs-callout bs-callout-info">
+						<h4>技术规范</h4>
+						<ol>
+							<li>接口仅支持HTTP协议，使用POST方法访问。</li>
+							<li>通过接口提交的指令参数必须经过RSA算法加密，禁止明文传输。客户按标准RSA算法（1024位密钥长度）生成公私钥，将公钥提供给网易企业邮箱用于解密，私钥自行妥善保管用于指令加密。</li>
+							<li>网易企业邮箱对客户服务器IP地址进行服务授权，进一步增强接口安全性。</li>
+							<li>发送POST请求。</li>
+							<li>接口调用一秒钟限制为一次。</li>
+						</ol>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h4>使用规范</h4>
+						<ol>
+							<li>POST请求到URL：<code>
+									http://mail.qiye.163.com/domain/services/externalApi?cid=*&enc=*</code></li>
+							<li>*： 真实URL中替换为实际操作要填入的参数值。</li>
+							<li>cid：用于标识企业，由网易企业邮箱分配提供，实际用的是orgid。</li>
+							<li>enc：加密操作参数。
+								<ul>
+									<li>enc的第一个参数固定为action，表示要执行的操作。</li>
+									<li>后面的参数是action操作参数，参数之间用“&”分隔。</li>
+								</ul>
+							</li>
+							<li>参数值使用<code>URLEncoder.encode(String,"utf-8");</code>编码，以保证不存在特殊字符干扰参数值的解析。
+							</li>
+							<li>同步指令返回值采用code+文字说明，查询指令返回值为XML格式文本。</li>
+						</ol>
+					</div>
+
+
+					<h3 id="sync_instructions">指令说明</h3>
+					<h4>同步指令</h4>
+					<table class="table">
+						<tr>
+							<th>操作名</th>
+							<th>操作说明</th>
+							<th>操作参数</th>
+							<th>参数属性</th>
+							<th>备注</th>
+						</tr>
+						<tr>
+							<td rowspan="3">createOrg</td>
+							<td rowspan="3">创建部门</td>
+							<td>ouid</td>
+							<td>必填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>org_unit_name</td>
+							<td>必填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>parent_org_unit_id</td>
+							<td>选填 匹配项 录入项</td>
+							<td>创建下级部门时使用</td>
+						</tr>
+						<tr>
+							<td rowspan="3">updateOrg</td>
+							<td rowspan="3">更新部门</td>
+							<td>ouid</td>
+							<td>必填 匹配项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>org_unit_name</td>
+							<td>选填 录入项</td>
+							<td>更新部门名称</td>
+						</tr>
+						<tr>
+							<td>u_desc</td>
+							<td>选填 录入项</td>
+							<td>更新部门描述</td>
+						</tr>
+						<tr>
+							<td>deleteOrg</td>
+							<td>删除部门</td>
+							<td>ouid</td>
+							<td>必填 匹配项</td>
+							<td>要求该部门下没有邮箱帐号</td>
+						</tr>
+						<tr>
+							<td rowspan="8">createUser</td>
+							<td rowspan="8">创建帐号</td>
+							<td>account_name</td>
+							<td>必填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>nickname</td>
+							<td>必填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td>必填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>department</td>
+							<td>选填 匹配项 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>job_no</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>exp_time</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>address_right</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>privacy_level</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td rowspan="9">updateUser</td>
+							<td rowspan="9">更新帐号</td>
+							<td>account_name</td>
+							<td>必填 匹配项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>nickname</td>
+							<td>选填 录入项</td>
+							<td>更新姓名</td>
+						</tr>
+						<tr>
+							<td>department</td>
+							<td>选填 匹配项 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>status</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>job_no</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>exp_time</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>address_right</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>privacy_level</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>delta_quota</td>
+							<td>选填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>deleteUser</td>
+							<td>删除帐号</td>
+							<td>account_name</td>
+							<td>必填 匹配项</td>
+							<td>禁用帐号7天，7天后彻底删除</td>
+						</tr>
+						<tr>
+							<td>recoverUser</td>
+							<td>恢复帐号</td>
+							<td>account_name</td>
+							<td>必填 匹配项</td>
+							<td>删除帐号7天内可以恢复</td>
+						</tr>
+						<tr>
+							<td rowspan="2">updateUserPwd</td>
+							<td rowspan="2">更新帐号密码</td>
+							<td>account_name</td>
+							<td>必填 匹配项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td>必填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td rowspan="2">addUserAlias</td>
+							<td rowspan="2">添加帐号别名</td>
+							<td>account_name</td>
+							<td>必填 匹配项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>alias_name</td>
+							<td>必填 录入项</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>deleteUserAlias</td>
+							<td>删除帐号别名</td>
+							<td>alias_name</td>
+							<td>必填 匹配项</td>
+							<td></td>
+						</tr>
+					</table>
+					<hr>
+
+					<h4>查询指令</h4>
+					<table class="table">
+						<tr>
+							<th>操作名</th>
+							<th>操作说明</th>
+							<th>操作参数</th>
+							<th>参数属性</th>
+							<th>备注</th>
+						</tr>
+						<tr>
+							<td>getDepartmentList</td>
+							<td>查询所有部门数据</td>
+							<td>-</td>
+							<td>-</td>
+							<td>以XML格式返回数据</td>
+						</tr>
+						<tr>
+							<td rowspan="2">getAccountList</td>
+							<td rowspan="2">查询某部门的所有帐号数据</td>
+							<td>ouid</td>
+							<td>选填</td>
+							<td>以XML格式返回数据</td>
+						</tr>
+						<tr>
+							<td>recursion</td>
+							<td>选填</td>
+							<td>不填参数时返回域下所有帐号数据</td>
+						</tr>
+						<tr>
+							<td>getUserAlias</td>
+							<td>获取帐号别名</td>
+							<td>account_name</td>
+							<td>必填</td>
+							<td>多个别名逐行显示</td>
+						</tr>
+					</table>
+
+					<div class="alert alert-warning">
+						<p>
+							<strong>注意：</strong>
+						</p>
+						<ol>
+							<li>操作名区分大小写！</li>
+							<li>参数属性为“匹配项”，参数值必须匹配数据库中已有数据，否则操作失败，POST返回值为500。</li>
+							<li>参数属性为“录入项”，参数值将存入网易企业邮箱数据库。</li>
+						</ol>
+					</div>
+
+					<h3 id="sync_explanation">参数说明</h3>
+					<table class="table table-bordered table-striped">
+						<tr>
+							<th>参数名</th>
+							<th>类型</th>
+							<th>名称</th>
+							<th>说明</th>
+						</tr>
+						<tr>
+							<td colspan="4"><b>部门参数</b></td>
+						</tr>
+						<tr>
+							<td>ouid</td>
+							<td>String</td>
+							<td>部门ID</td>
+							<td>部门唯一标识，由企业通过接口创建部门时建立，并要求记录好部门与ouid之间的对应关系</td>
+						</tr>
+						<tr>
+							<td>parent_org_unit_id</td>
+							<td>String</td>
+							<td>父级部门ID</td>
+							<td>标识部门在组织架构所处位置</td>
+						</tr>
+						<tr>
+							<td>org_unit_name</td>
+							<td>String</td>
+							<td>部门名称</td>
+							<td>同一级的部门名称不允许重复</td>
+						</tr>
+						<tr>
+							<td>u_desc</td>
+							<td>String</td>
+							<td>部门描述</td>
+							<td>添加部门文字介绍和简单描述</td>
+						</tr>
+						<tr>
+							<td colspan="4"><b>帐号参数</b></td>
+						</tr>
+						<tr>
+							<td>account_name</td>
+							<td>String</td>
+							<td>邮箱帐号</td>
+							<td>邮箱帐号作为邮箱地址前缀，邮箱用户的唯一标识，企业内同一域内不可重复</td>
+						</tr>
+						<tr>
+							<td>nickname</td>
+							<td>String</td>
+							<td>姓名</td>
+							<td>用户的姓名显示于企业通讯录</td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td>String</td>
+							<td>密码</td>
+							<td>帐号的登录密码</td>
+						</tr>
+						<tr>
+							<td>department</td>
+							<td>String</td>
+							<td>所属部门ID</td>
+							<td>使用部门参数的ouid</td>
+						</tr>
+						<tr>
+							<td>status</td>
+							<td>int</td>
+							<td>状态</td>
+							<td>0表示正常，1表示禁用</td>
+						</tr>
+						<tr>
+							<td>job_no</td>
+							<td>String</td>
+							<td>工号</td>
+							<td>用户的工号信息</td>
+						</tr>
+						<tr>
+							<td>exp_time</td>
+							<td>Date</td>
+							<td>过期时间</td>
+							<td>格式：yyyy-MM-dd</td>
+						</tr>
+						<tr>
+							<td>address_right</td>
+							<td>int</td>
+							<td>能否使用企业通讯录</td>
+							<td>0不能，1可以（默认）</td>
+						</tr>
+						<tr>
+							<td>privacy_level</td>
+							<td>int</td>
+							<td>是否在企业通讯录显示</td>
+							<td>0不显示，2显示（默认）</td>
+						</tr>
+						<tr>
+							<td>delta_quota</td>
+							<td>int</td>
+							<td>额外的空间</td>
+							<td>需申请开通容量自主分配功能</td>
+						</tr>
+						<tr>
+							<td>alias_name</td>
+							<td>String</td>
+							<td>别名</td>
+							<td>邮箱帐号别名，企业内同一域内不可重复</td>
+						</tr>
+						<tr>
+							<td colspan="4"><b>查询参数</b></td>
+						</tr>
+						<tr>
+							<td>ouid</td>
+							<td>String</td>
+							<td>部门ID</td>
+							<td>通过部门ID查询帐号</td>
+						</tr>
+						<tr>
+							<td>recursion</td>
+							<td>bool</td>
+							<td>是否查询子部门帐号</td>
+							<td>true包含，false不包含，默认为false。查询部门ID对应的所有帐号，包括子部门下的帐号。</td>
+						</tr>
+					</table>
+
+					<h3 id="sync_url">URL示例</h3>
+					<pre>1.创建部门
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=createOrg&ouid=d_1&org_unit_name=销售部</span>
+
+2.更新部门
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=updateOrg&ouid=d_1&org_unit_name=销售事业部</span>
+
+3.创建子部门
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=createOrg&ouid=d_1_1&parent_org_unit_id=d_1&org_unit_name=Sales</span>
+
+4.删除部门
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=deleteOrg&ouid=dept_1_1</span>
+
+5.创建帐号
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=createUser&account_name=zs&nickname=张三&department=d_1&password=1qaz2w</span>
+
+6.修改帐号属性
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=updateUser&account_name=zs&nickname=张三三&job_no=213</span>
+
+7.删除帐号
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=deleteUser&account_name=zs</span>
+
+8.恢复帐号
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=recoverUser&account_name=zs</span>
+
+9.修改帐号密码
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=updateUserPwd&account_name=zs&password=2wsx1q</span>
+
+10.查询部门数据
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=getDepartmentList</span>
+
+11.修改帐号密码
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=getAccountList&ouid=d_1&recursion</span>
+
+12.禁用帐号
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=updateUser&account_name=zs&nickname=张三三&status=1</span>
+
+13.获取帐号别名
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=getUserAlias&account_name=zs</span>
+
+14.添加帐号别名
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=addUserAlias&account_name=zs&alias_name=zhsan</span>
+
+15.删除帐号别名
+http://mail.qiye.163.com/domain/services/externalApi?cid=abc&enc=<span
+							class="text-danger">action=deleteUserAlias&alias_name=zhsan</span>
+
+**注意：<span class="text-danger">红色</span>部分需要RSA加密
+</pre>
+
+					<h3 id="sync_result">返回结果示例</h3>
+					<h4>同步指令</h4>
+					<ol>
+						<li>操作成功 <code>200\r\n</code></li>
+						<li>操作失败 <code>500\r\n</code></li>
+						<li>没有权限 <code>4**\r\n</code></li>
+					</ol>
+					<h4>查询指令</h4>
+					<div class="highlight">
+						<pre>
+							<code class="language-html xml">1. 查询部门列表
+&lt;depts&gt;
+&lt;dept&gt;
+&lt;ouid&gt;dept_1&lt;/ouid&gt;
+&lt;org_unit_name&gt;ABC销售部&lt;/org_unit_name&gt;
+&lt;parent_org_unit_id&gt;dept_1_1&lt;/parent_org_unit_id&gt;
+&lt;/dept&gt;
+...
+&lt;/depts&gt;
+
+2. 查询帐号列表
+&lt;accounts&gt;
+&lt;account&gt;
+&lt;account_name&gt;zs&lt;/account_name&gt;
+&lt;nickname&gt;张三&lt;/nickname&gt;
+&lt;password&gt;1qaz2wsx&lt;/password&gt;
+&lt;department&gt;dept_1&lt;/department&gt;
+&lt;/account&gt;
+...
+&lt;/accounts&gt;</code>
+						</pre>
+					</div>
+
+					<h3 id="sync_examples">应用示例</h3>
+					<p>以创建用户为例：（假设客户域名为abc.com，cid值为abc123）</p>
+					<p>
+						原始参数：
+						<code>action=createUser&account_name=zs&nickname=张三&department=dept_1&password=1qaz2wsx</code>
+					</p>
+					<p>RSA加密后参数：</p>
+					<pre>1da01df7b4486978df8624b0e6c9122c4fdd74ff435b096c5b36df26a0c38947a409cc329bef750a28e5aac5c79d3e8ccdee46d59623ed5d45dc696cf7068741980c4e1c1745af599103af74e796ee5ca158866b9301fcfe06060c3cfdfa0c2ae326352cf5ba1800d1cca881da60dc02c69c897477295dc09b336e561f3b52eb020e5e29f70b58935b3c7cd4eda62c3f602a0de39e35741803bbe5b9b0c2e058c36f403fbd5aec361fcb3feacdef4e03110a3963003a98f7547e224791682bfd82b469968ec895abe3bc6bd02bad57095fc7a29dab097a1f38dd4f9102a9644150fac41d3bdd2ff92f0179fef63ce4b0f9074f53554cc087e52e288585269039</pre>
+					<p>完整的请求地址：</p>
+					<pre>http://mail.qiye.163.com/domain/services/externalApi?cid=abc123&enc=1da01df7b4486978df8624b0e6c9122c4fdd74ff435b096c5b36df26a0c38947a409cc329bef750a28e5aac5c79d3e8ccdee46d59623ed5d45dc696cf7068741980c4e1c1745af599103af74e796ee5ca158866b9301fcfe06060c3cfdfa0c2ae326352cf5ba1800d1cca881da60dc02c69c897477295dc09b336e561f3b52eb020e5e29f70b58935b3c7cd4eda62c3f602a0de39e35741803bbe5b9b0c2e058c36f403fbd5aec361fcb3feacdef4e03110a3963003a98f7547e224791682bfd82b469968ec895abe3bc6bd02bad57095fc7a29dab097a1f38dd4f9102a9644150fac41d3bdd2ff92f0179fef63ce4b0f9074f53554cc087e52e288585269039</pre>
+				</div>
+
+				<div class="bs-docs-section">
+					<!-- 关于文档 -->
+					<div class="page-header">
+						<h1 id="login">单点登录接口</h1>
+					</div>
+					<h3 id="login_description">接口说明</h3>
+					<p>采用RSA加密算法的HTTP协议接口，客户提交邮箱帐号及加密信息，网易企业邮箱解密验证通过后，给予浏览器页面自动跳转登录访问邮箱。</p>
+
+					<h3 id="login_specification">接口规范</h3>
+					<div class="bs-callout bs-callout-info">
+						<h4>技术规范</h4>
+						<ol>
+							<li>通过接口提交的参数必须使用RSA私钥进行摘要签名，确保请求能通过验证。客户按标准RSA算法（1024位密钥长度）生成公私钥，将公钥提供给网易企业邮箱用于验证签名，私钥自行妥善保管用于签名。</li>
+							<li>接口使用HTTPS协议，每个请求URL只有一次请求有效，每个URL生成后5分钟内有效。</li>
+						</ol>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h4>使用规范</h4>
+						<ol>
+							<li>POST或GET请求到URL： <code>https://entry.qiye.163.com/domain/oa/Entry?domain=*&account_name=*&time=*&lang=*&enc=*</code></li>
+							<li>*：真实URL中替换为实际操作要填入的参数值。</li>
+							<li>domain：企业邮箱注册域名，用于标识客户。</li>
+							<li>account_name：需要单点登录的邮箱帐号。</li>
+							<li>time：生成URL的服务器当前时间(单位ms，至现在所经过的 UTC 毫秒数)。</li>
+							<li>lang：单点登录后邮箱页面使用的语言版本，此参数可以不填，默认中文。</li>
+							<li>enc：加密串用于验证URL提交方的身份。Enc的参数原文为account_name、domain、time三个参数值按顺序连起来，中间不要任何符号间隔。</li>
+							<li>参数值使用<code>URLEncoder.encode(String,"utf-8");</code>编码，以保证不存在特殊字符干扰参数值的解析。
+							</li>
+							<li>返回值采用code+文字说明的方式。如：
+								<ul>
+									<li>操作成功：<code>200\r\n</code></li>
+									<li>操作失败：<code>500\r\n</code></li>
+									<li>没有权限：<code>4**\r\n</code></li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+
+					<h3 id="login_examples">应用示例</h3>
+					<pre><%@ page contentType="text/html;charset=gbk"%>
+<%@page import="com.netease.domainmail.security.RSATool"%>
+
+<%
+	//当前时间（以ms为单位）
+	String time = System.currentTimeMillis() + "";
+
+	//域名，请使用企业自己的域名
+	String domain = "sample.com";
+	
+	//登录帐号
+	String account_name = request.getParameter("account_name");
+	
+	//语言，0-中文，1-英文，可以不传此参数，默认为0
+	String lang = request.getParameter("language");
+	
+	//私钥，请使用企业自己生成的私钥
+	String priKey = "...";
+	
+	//要加密的信息，顺序依次为:帐号，域名，时间
+	String src = account_name + domain + time;
+	
+	RSATool rsa = new RSATool();
+	//加密串 (摘要)
+	String enc = rsa.generateSHA1withRSASigature(src, priKey);
+	
+	//提交登录的url,后台加上必须的参数,为了安全，可使用https提交
+	String url = "https://entry.qiye.163.com/domain/oa/Entry?domain=" 
+		+ domain + "&account_name=" + account_name + "&time=" + time + "&enc=" + enc + "&lang=" + lang;
+	
+	//登录,也可以采用form表单post提交的方式。
+	response.sendRedirect(url);
+%></pre>
+
+				</div>
+
+				<div class="bs-docs-section">
+					<!-- 关于文档 -->
+					<div class="page-header">
+						<h1 id="unread">未读邮件数量接口</h1>
+					</div>
+					<h3 id="unread_description">接口说明</h3>
+					<p>采用RSA加密算法的HTTP协议接口，客户提交加密的邮箱帐号和服务器时间信息，网易企业邮箱验证并解密参数后，返回对应邮箱帐号所有未读邮件的数量。</p>
+
+					<h3 id="unread_specification">接口规范</h3>
+					<div class="bs-callout bs-callout-info">
+						<h4>技术规范</h4>
+						<ol>
+							<li>客户按网易企业邮箱提供的算法（标准RSA算法，1024位密钥长度）生成公私钥，将公钥提供给网易企业邮箱，私钥自行妥善保管，通过接口提交URL链接参数必须使用RSA私钥加密，禁止明文传输。</li>
+							<li>客户还需要提供访问接口的服务器IP地址。网易企业邮箱会对IP地址进行服务授权，进一步增强接口的安全性，确保用户数据传输的绝对保密性。</li>
+							<li>接口使用HTTPS协议，每个请求URL只有一次请求有效，每个URL生成后5分钟之内有效。</li>
+						</ol>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h4>使用规范</h4>
+						<ol>
+							<li>用GET或者POST请求到URL：<code>http://cm.qiye.163.com/oaserver/server?domain=*&param=*</code></li>
+							<li>*：真实URL中替换为实际操作要填入的参数值。</li>
+							<li>domain：企业邮箱注册域名，用于标识客户。</li>
+							<li>param：RSA加密内容。param的明文内容为：user=*&time=*。
+								<ul>
+									<li>user：需要返回未读邮件数量的邮箱帐号。</li>
+									<li>time：生成URL的服务器当前时间(单位ms，至现在所经过的 UTC 毫秒数形式)。</li>
+								</ul>
+							</li>
+							<li>返回数据采用JSON编码方式。参数描述：status（成功1，失败0）,msg（结果描述），count（未读邮件数）。
+								<ul>
+									<li>成功：<code>{status:1,msg:information,count:5}</code></li>
+									<li>失败：<code>{status:0,msg:information,count:0}</code></li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+
+					<h3 id="unread_examples">应用示例</h3>
+					<p>以查询admin帐号未读邮件数为例：（假设客户域名为abc.com）</p>
+					<p>
+						param原始数据：
+						<code>user=admin&time=1307945684171</code>
+					</p>
+					<p>经过RSA加密后，上述明文对应的param密文是：</p>
+					<pre>4a18187336d98e9c7a416f86feaeb5ae560725cf607c8b6343e42773a0d98ac1186fa5b8ceb338757c3ce7368d691d2f24d483a66ed342492984563e5b01334c3fc8fb86617793e597addb533caa02f3f6b3ae026a822265111b2799c81f957a0d367ec80ebfe8c73a800f44c490d6946da7c0cb17786cad6250adb878143611</pre>
+					<p>完整的请求地址：</p>
+					<pre>http://cm.qiye.163.com/oaserver/server?domain=abc.com&param=4a18187336d98e9c7a416f86feaeb5ae560725cf607c8b6343e42773a0d98ac1186fa5b8ceb338757c3ce7368d691d2f24d483a66ed342492984563e5b01334c3fc8fb86617793e597addb533caa02f3f6b3ae026a822265111b2799c81f957a0d367ec80ebfe8c73a800f44c490d6946da7c0cb17786cad6250adb878143611</pre>
+					<p>
+						返回结果：
+						<code>{status:1,msg:success,count:3}</code>
+					</p>
+				</div>
+				
+				<div class="bs-docs-section">
+					<!-- 关于文档 -->
+					<div class="page-header">
+						<h1 id="custom">自定义登录框接口</h1>
+					</div>
+					<h3 id="custom_description">接口说明</h3>
+					<p>提供代码模版，可在客户的网站页面中嵌入网易企业邮箱的登录框，用户从自己的网站或系统上直接输入用户名和密码登录网易企业邮箱, 支持用户自行设置个性化登录框。</p>
+					<img src="自定义登陆框.png" class="img-responsive img-rounded" alt="自定义登陆框">
+
+					<h3 id="custom_specification">接口规范</h3>
+					<div class="bs-callout bs-callout-info">
+						<h4>技术规范</h4>
+						添加自定义登录框请遵循以下规范：
+						<ol>
+							<li>自定义登录框页面URL的域名必须与邮箱注册的域名一致，才能登录成功。</li>
+							<li>以表单格式（form）和POST方法提交登录信息到指定URL。</li>
+							<li>表单（form）中的domain（域值），为网易企业邮箱根据客户域名生成的字符串代码，填在客服提供的示例代码里，客户不需要修改。</li>
+						</ol>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h4>使用规范</h4>
+						<ul>
+							<li>表单提交URL：<code>https://entry.qiye.163.com/domain/domainEntLogin</code></li>
+							<li>提交方法：post</li>
+						</ul>
+						<table class="table table-hover">
+						<tr>
+							<th>数据项目</th>
+							<th>字段名称(name/id)</th>
+							<th>类型(type)</th>
+							<th>数据值(value)</th>
+							<th>是否必须</th>
+						</tr>
+						<tr>
+							<td>域名值</td>
+							<td>domain</td>
+							<td>hidden</td>
+							<td>根据客户域名生成特定值，客服提供，不需要修改</td>
+							<td>是</td>
+						</tr>
+						<tr>
+							<td>帐号</td>
+							<td>account_name</td>
+							<td>text</td>
+							<td>由用户填写</td>
+							<td>是</td>
+						</tr>
+						<tr>
+							<td>密码</td>
+							<td>password</td>
+							<td>password</td>
+							<td>由用户填写</td>
+							<td>是</td>
+						</tr>
+						<tr>
+							<td>是否记住用户名</td>
+							<td>remUsername</td>
+							<td>checkbox</td>
+							<td>需要客户页面自行实现</td>
+							<td>否</td>
+						</tr>
+						<tr>
+							<td>是否SSL安全登录</td>
+							<td>secure</td>
+							<td>checkbox</td>
+							<td>checked：默认选择，建议不要修改</td>
+							<td>是</td>
+						</tr>
+						<tr>
+							<td>是否全程SSL</td>
+							<td>all_secure</td>
+							<td>checkbox</td>
+							<td>checked：默认不选择</td>
+							<td>是</td>
+						</tr>
+						<tr>
+							<td>登录邮箱版本</td>
+							<td>language</td>
+							<td>hidden</td>
+							<td>0：简体中文（默认）；1：英文；2：繁体中文</td>
+							<td>否</td>
+						</tr>
+						</table>
+					</div>
+					
+					<div class="alert alert-warning">
+						<p>
+							<strong>注意事项:</strong>
+						</p>
+						<p>如果用户的域为example并且mail.example的cname指向没有设置为qiye.163.com，则需要在管理后台->企业信息管理-里面将邮箱登录地址设置为:mail.qiye.163.com。</p>
+					</div>
+
+					<h3 id="custom_examples">应用示例</h3>
+					<pre><code>&lt;form action="https://entryhz.qiye.163.com/domain/domainEntLogin" class="loginForm" method="post"&gt;
+    &lt;input type="hidden" name="domain" value="abc.com"/&gt;
+    &lt;table&gt;
+        &lt;caption&gt;企业用户登录&lt;/caption&gt;
+        &lt;tr&gt;
+            &lt;th&gt;用户名&lt;/th&gt;
+            &lt;td&gt;
+                &lt;input class="text" type="text" name="account_name"/&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;密码&lt;/th&gt;
+            &lt;td&gt;
+                &lt;input class="text" type="password" name="password"/&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;&lt;/th&gt;
+            &lt;td&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" name="secure" value="1" checked/&gt; SSL安全登录
+                &lt;/label&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" name="all_secure" value="1"/&gt; 全程SSL
+                &lt;/label&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;&lt;/th&gt;
+            &lt;td&gt;
+                &lt;input type="submit" value="登 录"&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form&gt;
+&lt;script type="text/javascript" src="//mail.qiye.163.com/js/loginjs.jsp"&gt;&lt;/script&gt;</code></pre>
+	
+					<h3 id="custom_check">错误信息</h3>
+					<p>测试从企业所在域登录，输入帐号密码后，如果登录失败，可以从登录页面的URL（即浏览器地址栏网址）中参数判断失败的具体原因，如下是常见的几种失败原因：</p>
+					<table class="table table-bordered table-striped">
+						<tr>
+							<th>参数</th>
+							<th>原因</th>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.USERORPASSNULL</td>
+							<td>参数错误:用户名或者密码为空</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.DOMAINNULL</td>
+							<td>参数错误:未指定的域邮箱参数</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.PASSERR</td>
+							<td>用户名和密码不匹配</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.ILLEGALACCOUNT</td>
+							<td>该帐号属于群发名单或者别名，不允许登录</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.USERNOTEXIST</td>
+							<td>该帐号不存在，请你确认域名和帐号</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.SUPERADMINDOMAINERR</td>
+							<td>该超级管理员并未申请任何域名邮箱</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.SYSTEMBUSY</td>
+							<td>登录系统繁忙，请你稍后再试</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.IPDENY</td>
+							<td>登录失败，你的IP在黑名单中</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.USRSTATUS1</td>
+							<td>该帐号已被禁用，请联系管理员</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.USRSTATUS2</td>
+							<td>帐号已过期，请联系管理员</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.USRSTATUS5</td>
+							<td>该帐号已被管理员删除，请联系管理员/td>
+						</tr>
+						<tr>
+							<td>SUC.LOGIN.USRUNLOCK</td>
+							<td>该帐号已解除冻结状态，请你再次输入用户和密码继续</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.DOMAINEXPED</td>
+							<td>该域名邮箱已经过期了</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.DOMAINNOTREGISTER</td>
+							<td>该域名尚未通过，请以超级管理员登录</td>
+						</tr>
+						<tr>
+							<td>ERR.LOGIN.DOMAINSTATUS1</td>
+							<td>该域名邮箱已被禁用，请你联系客服</td>
+						</tr>
+						<tr>
+							<td>ERR.SESSIONNULL</td>
+							<td>会话已经失效，请你重新登录操作</td>
+						</tr>
+						<tr>
+							<td>ERR.SYSTEM</td>
+							<td>系统繁忙，请你稍后再试</td>
+						</tr>
+						<tr>
+							<td>ERR.ADMINREQUIRE</td>
+							<td>非法权限，该帐号无法执行这个操作</td>
+						</tr>
+						<tr>
+							<td>ERR.PARAMNULL</td>
+							<td>系统发生错误：参数为空</td>
+						</tr>
+						<tr>
+							<td>ERR.ERR.PARAMTOOLONG</td>
+							<td>参数过长</td>
+						</tr>
+						<tr>
+							<td>ERR.ILLEGAL</td>
+							<td>系统非法操作</td>
+						</tr>			
+					</table>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="bs-footer" role="contentinfo">
+		<div class="container">网易公司版权所有 © 1997--2014</div>
+	</footer>
+
+	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<script
+		src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="http://cdn.bootcss.com/holder/2.0/holder.min.js"></script>
+	<script src="http://cdn.bootcss.com/highlight.js/7.3/highlight.min.js"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
+
+	<script src="http://v3.bootcss.com/docs-assets/js/application.js"></script>
+
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://"
+				: " http://");
+		document
+				.write(unescape("%3Cscript src='"
+						+ _bdhmProtocol
+						+ "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+
+</body>
 </html>
